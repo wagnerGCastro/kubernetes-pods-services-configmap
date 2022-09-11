@@ -1,4 +1,6 @@
 ## Install Kubernet and Minikube
+
+# part-1-kubernetes-pods-services-configmap
   
 ( 2- ) Inicie seu cluster
   ver drivers: https://minikube.sigs.k8s.io/docs/drivers/vmware/
@@ -42,7 +44,6 @@
     $ kubectl delete pod news-portal
     $ kubectl delete -f ./2-news-portal.yaml
   ```
-
 
 - Class (04) - Creating and Understanding Pods
 
