@@ -76,3 +76,7 @@
     $ kubectl get services --namespace=sistema-noticias-namespace  -o wide 
     $ kubectl get pods --namespace=sistema-noticias-namespace  -o wide 
   ```
+
+# part-2-kubernetes-deployments-volumes-scalability
+
+
