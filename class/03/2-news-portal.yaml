@@ -6,11 +6,11 @@ metadata:
     name: news-portal
 spec:
   containers:
-  - name: news-portal
-    image: aluracursos/portal-noticias:1
-    resources:
-      limits:
-        memory: "128Mi"
-        cpu: "500m"
-    ports:
-      - containerPort: 8056
+    - name: news-portal
+      image: aluracursos/portal-noticias:1
+      resources:
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
+      ports:
+        - containerPort: 80
