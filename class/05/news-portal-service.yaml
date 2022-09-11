@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: news-portal-service
+  namespace: sistema-noticias-namespace
 spec:
   type: NodePort
   ports:

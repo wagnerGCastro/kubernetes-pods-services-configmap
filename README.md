@@ -45,6 +45,7 @@
 
 
 - Class (04) - Creating and Understanding Pods
+
   - Creating news portal can, entry in  directory class/03/2-news-portal.yaml:
   ``` bash
     $ kubectl apply -f ./2-news-portal.yaml
@@ -55,10 +56,22 @@
     $ kubectl get pods -o wide
 
     -- before create service
-
     $  kubectl get services | kubectl get svc
 
-    
     $ kubectl delete pod news-portal
     $ kubectl delete -f ./2-news-portal.yaml
+  ```
+
+- Class (05) - Creating Services, Pods, 
+
+  - Creating namespaces to Pods and Services
+  ``` bash
+    $ kubectl apply -f ./news-portal-pod.yaml
+    $ kubectl apply -f ./news-portal-service.yaml
+    $ kubectl apply -f ./sistema-noticias-namespace.yaml
+    $ kubectl apply -f ./sistema-noticias-pod.yaml
+    $ kubectl apply -f ./sistema-noticias-service.yaml
+
+    $ kubectl get services --namespace=sistema-noticias-namespace  -o wide 
+    $ kubectl get pods --namespace=sistema-noticias-namespace  -o wide 
   ```
